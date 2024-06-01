@@ -72,9 +72,7 @@ contract PriceStables is FunctionsClient, ConfirmedOwner {
         return answer;
     }
 
-    // Router address - Hardcoded for Sepolia
-    // Check to get the router address for your supported network https://docs.chain.link/chainlink-functions/supported-networks
-   
+
 
     // JavaScript source code
     // Fetch Rates API.
@@ -165,10 +163,6 @@ contract PriceStables is FunctionsClient, ConfirmedOwner {
         "return ethers.getBytes(encoded);";
 
 
-
-   
-    
-    //Callback gas limit
     uint32 gasLimit = 300000;
 
     // donID - Hardcoded for Sepolia
