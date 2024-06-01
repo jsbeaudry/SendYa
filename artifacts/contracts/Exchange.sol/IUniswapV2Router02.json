@@ -1,0 +1,204 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IUniswapV2Router02",
+  "sourceName": "contracts/Exchange.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "WETH",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "daiToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "daiAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountTokenMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountETHMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "addLiquidityETH",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        }
+      ],
+      "name": "getAmountsOut",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountOut",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapETHForExactTokens",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountOutMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapExactTokensForETH",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amountIn",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amountOutMin",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address[]",
+          "name": "path",
+          "type": "address[]"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "swapExactTokensForTokens",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506103f4806100206000396000f3fe6080604052600436106100555760003560e01c806318cbafe51461005a57806338ed17391461005a578063ad5c464814610097578063d06ca61f146100b3578063f305d719146100d6578063fb3bdb41146100e4575b600080fd5b34801561006657600080fd5b50610081610075366004610165565b60609695505050505050565b60405161008e91906101d5565b60405180910390f35b3480156100a357600080fd5b506040516000815260200161008e565b3480156100bf57600080fd5b506100816100ce36600461022f565b606092915050565b610081610075366004610300565b6100816100f2366004610358565b606095945050505050565b60008083601f84011261010f57600080fd5b50813567ffffffffffffffff81111561012757600080fd5b6020830191508360208260051b850101111561014257600080fd5b9250929050565b80356001600160a01b038116811461016057600080fd5b919050565b60008060008060008060a0878903121561017e57600080fd5b8635955060208701359450604087013567ffffffffffffffff8111156101a357600080fd5b6101af89828a016100fd565b90955093506101c2905060608801610149565b9150608087013590509295509295509295565b6020808252825182820181905260009190848201906040850190845b8181101561020d578351835292840192918401916001016101f1565b50909695505050505050565b634e487b7160e01b600052604160045260246000fd5b6000806040838503121561024257600080fd5b8235915060208084013567ffffffffffffffff8082111561026257600080fd5b818601915086601f83011261027657600080fd5b81358181111561028857610288610219565b8060051b604051601f19603f830116810181811085821117156102ad576102ad610219565b6040529182528482019250838101850191898311156102cb57600080fd5b938501935b828510156102f0576102e185610149565b845293850193928501926102d0565b8096505050505050509250929050565b60008060008060008060c0878903121561031957600080fd5b61032287610149565b955060208701359450604087013593506060870135925061034560808801610149565b915060a087013590509295509295509295565b60008060008060006080868803121561037057600080fd5b85359450602086013567ffffffffffffffff81111561038e57600080fd5b61039a888289016100fd565b90955093506103ad905060408701610149565b94979396509194606001359291505056fea2646970667358221220c660646a5d52d86b8f512678cffe516bb50c0157de5b4d105c87d9f0cf2b0fa164736f6c63430008140033",
+  "deployedBytecode": "0x6080604052600436106100555760003560e01c806318cbafe51461005a57806338ed17391461005a578063ad5c464814610097578063d06ca61f146100b3578063f305d719146100d6578063fb3bdb41146100e4575b600080fd5b34801561006657600080fd5b50610081610075366004610165565b60609695505050505050565b60405161008e91906101d5565b60405180910390f35b3480156100a357600080fd5b506040516000815260200161008e565b3480156100bf57600080fd5b506100816100ce36600461022f565b606092915050565b610081610075366004610300565b6100816100f2366004610358565b606095945050505050565b60008083601f84011261010f57600080fd5b50813567ffffffffffffffff81111561012757600080fd5b6020830191508360208260051b850101111561014257600080fd5b9250929050565b80356001600160a01b038116811461016057600080fd5b919050565b60008060008060008060a0878903121561017e57600080fd5b8635955060208701359450604087013567ffffffffffffffff8111156101a357600080fd5b6101af89828a016100fd565b90955093506101c2905060608801610149565b9150608087013590509295509295509295565b6020808252825182820181905260009190848201906040850190845b8181101561020d578351835292840192918401916001016101f1565b50909695505050505050565b634e487b7160e01b600052604160045260246000fd5b6000806040838503121561024257600080fd5b8235915060208084013567ffffffffffffffff8082111561026257600080fd5b818601915086601f83011261027657600080fd5b81358181111561028857610288610219565b8060051b604051601f19603f830116810181811085821117156102ad576102ad610219565b6040529182528482019250838101850191898311156102cb57600080fd5b938501935b828510156102f0576102e185610149565b845293850193928501926102d0565b8096505050505050509250929050565b60008060008060008060c0878903121561031957600080fd5b61032287610149565b955060208701359450604087013593506060870135925061034560808801610149565b915060a087013590509295509295509295565b60008060008060006080868803121561037057600080fd5b85359450602086013567ffffffffffffffff81111561038e57600080fd5b61039a888289016100fd565b90955093506103ad905060408701610149565b94979396509194606001359291505056fea2646970667358221220c660646a5d52d86b8f512678cffe516bb50c0157de5b4d105c87d9f0cf2b0fa164736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
